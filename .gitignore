@@ -119,7 +119,6 @@ ehthumbs_vista.db
 # Folder config file
 Desktop.ini
 
-# Recycle Bin used on file shares
 $RECYCLE.BIN/
 
 # Windows Installer files
@@ -130,8 +129,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# selma var her
-#hallo
 
 # End of https://www.gitignore.io/api/macos,codekit,windows,pycharm+all,intellij+all
