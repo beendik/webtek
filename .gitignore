@@ -131,5 +131,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# selma var her
 
 # End of https://www.gitignore.io/api/macos,codekit,windows,pycharm+all,intellij+all
