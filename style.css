@@ -85,6 +85,7 @@ nav a {
     padding: 20px 20px;
     color: #92B7CE;
     font-weight: 600;
+    font-size: 16px;
 }
 
 nav a.active {
