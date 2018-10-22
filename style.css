@@ -159,3 +159,45 @@ nav a.active {
     max-width: 400px;
     margin: auto;
 }
+
+.feedback {
+    background: #E8ECF8;
+    padding: 100px 0;
+    margin: 120px 0;
+    text-align: center;
+}
+
+.feedback blockquote {
+    font-size: 40px;
+    color: #202631;
+    font-family: "Source Serif Pro", Georgia, serif;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-style: italic;
+}
+
+.feedback cite {
+    color: #536381;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.feedback .navigation img {
+    width: 20px;
+}
+
+.feedback .navigation .prev, .feedback .navigation .next{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.feedback .navigation .prev {
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.feedback .navigation .next {
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
