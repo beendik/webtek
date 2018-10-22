@@ -1,0 +1,163 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #2A3241;
+    color: #E8ECF8;
+    font-family: "Source Sans Pro", "Trebuchet MS", sans-serif;
+}
+
+header {
+    background: #202631;
+    height: 90px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.col2 {
+    width: 50%;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 48px;
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+
+p {
+    font-family: "Source Serif Pro", Georgia, serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 0; /* In order to remove space between inline-block children */
+    /* NOTE: Using this trick + inline-block & vertical-align on col children so that content is vertically centered
+    Check out the highlight elements on the front page to see it in use */
+}
+
+header img {
+    max-width: 250px;
+    display: inline-block;
+    position: absolute;
+    top: 45px;
+    transform: translate(0, -50%);
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+header nav {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    transform: translate(0, -50%);
+
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    padding: 20px 20px;
+    color: #92B7CE;
+    font-weight: 600;
+}
+
+nav a.active {
+    color: #F19861;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translate(0, -50%);
+    text-align: center;
+}
+
+.hero-content a {
+    color: white;
+    text-transform: uppercase;
+    padding: 7px 18px 9px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.hero-frontpage {
+    height: calc(100vh - 90px); /* So that the navbar and the hero together is covering the screen*/
+    background: #555 url("img/hero-pole.jpg") center;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.intro {
+    background: #202631;
+    padding: 80px 0;
+    margin-bottom: 70px;
+
+}
+
+.intro h2 {
+    text-align: center;
+    font-family: "Source Serif Pro", Georgia, serif;
+    font-weight: 400;
+    font-size: 36px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.highlight {
+    margin: 30px auto;
+    padding: 50px;
+
+}
+
+.highlight:nth-of-type(2n) {
+    background: #272E3D;
+    border-radius: 6px;
+}
+
+
+.highlight img {
+    border-radius: 350px;
+    max-width: 300px;
+    margin: auto;
+    display: block;
+}
+
+.highlight .copy {
+    max-width: 400px;
+    margin: auto;
+}
