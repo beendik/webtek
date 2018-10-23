@@ -3,6 +3,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -14,6 +15,36 @@ body {
 header {
     background: #202631;
     height: 90px;
+}
+
+.hamburger {
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+
+.hamburger:checked ~ nav {
+    right: 0;
+}
+
+label[for="hamburger"] {
+    background: rgba(42, 50, 65, 0.7) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='%2392B7CE' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='4' rx='2' ry='2' /><rect y='24' width='30' height='4' rx='2' ry='2' /><rect y='12' width='30' height='4' rx='2' ry='2' /></svg>") no-repeat center;
+    width: 30px;
+    height: 30px;
+    padding: 12px 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    top: 45px;
+    transform: translate(50%, -50%);
+    right: 45px;
+    z-index: 3;
+    position: fixed;
+    display: none;
+    transition: transform .07s ease-in-out;
+
+}
+
+label[for="hamburger"]:active {
+    transform: translate(50%, -50%) scale(0.9);
 }
 
 a {
@@ -100,7 +131,7 @@ header img {
 
 header ul {
     list-style-type: none;
-    margin: 0;
+    padding: 0;
 }
 
 header nav {
@@ -112,7 +143,7 @@ header nav {
 
 }
 
-nav li {
+header nav li {
     display: inline-block;
 }
 
@@ -307,3 +338,36 @@ footer nav li a {
     padding: 0 20px;
 }
 
+@media screen and (max-width: 850px) {
+    header nav {
+        /*display: none;*/
+        height: 100%;
+        background: #2A3241;
+        display: block;
+        position: fixed;
+        z-index: 2;
+        width: 230px;
+        right: -230px;
+        transform: translate(0, 0);
+        top: 0;
+        padding-top: 100px;
+        box-shadow: 0 0 20px 1px #202631;
+        transition: right 0.2s ease;
+    }
+
+    header nav li {
+        display: block;
+        width: 100%;
+    }
+
+    header nav li a {
+        padding: 15px 0 15px 40px;
+        display: block;
+        width: 100%;
+    }
+
+    label[for="hamburger"] {
+        display: inline;
+    }
+
+}
