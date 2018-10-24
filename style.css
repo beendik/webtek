@@ -346,7 +346,6 @@ footer nav li a {
 
 @media screen and (max-width: 850px) {
     header nav {
-        /*display: none;*/
         height: 100%;
         background: #2A3241;
         display: block;
@@ -387,7 +386,7 @@ footer nav li a {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     h1 {
         font-size: 40px;
         line-height: 48px;
