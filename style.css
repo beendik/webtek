@@ -105,6 +105,14 @@ h2 {
     font-weight: 700;
 }
 
+h2Dark {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #202631;
+    font-weight: 700;
+}
+
 h3 {
     font-weight: 700;
     font-size: 24px;
