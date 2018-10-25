@@ -117,6 +117,13 @@ p {
     line-height: 28px;
 }
 
+pDark {
+    font-family: "Source Serif Pro", Georgia, serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #202631;
+}
+
 .wrap {
     max-width: 1000px;
     width: 90%;
