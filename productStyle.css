@@ -1,5 +1,3 @@
-/*  Generelle */
-
 html, body {
     margin: 0;
     padding: 0;
@@ -99,7 +97,6 @@ h1 {
 
 h2 {
     font-size: 36px;
-    text-transform: uppercase;
     text-align: center;
     color: white;
     font-weight: 700;
@@ -473,3 +470,21 @@ footer nav li a {
     }
 }
 
+.product {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    font-size: 0;
+}
+
+.introProducts {
+        background: #363f4e;
+        padding: 40px 0;
+        margin-bottom: 40px;
+        text-align: center;
+        font-family: "Source Serif Pro", Georgia, serif;
+        font-weight: 400;
+        margin: auto;
+        text-transform: none;
+    }

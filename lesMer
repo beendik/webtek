@@ -2,6 +2,5 @@ var element_to_scroll_to = documentGetElementById("intro");
 
 document.getElementById("lesMer").onclick = function lesMerScroll() {
     element_to_scroll_to.scrollIntroView(){
-    behaviour: "smooth";
     }
 }
