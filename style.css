@@ -105,7 +105,7 @@ h2 {
     font-weight: 700;
 }
 
-h2Dark {
+#h2Dark {
     font-size: 36px;
     text-transform: uppercase;
     text-align: center;
@@ -125,7 +125,7 @@ p {
     line-height: 28px;
 }
 
-pDark {
+#pDark {
     font-family: "Source Serif Pro", Georgia, serif;
     font-size: 18px;
     line-height: 28px;
