@@ -285,8 +285,8 @@ footer nav li a {
 }
 
 .highlight:nth-of-type(odd) {
-    background: #272E3D;
-    border-radius: 6px;
+    padding-left: 40%; 
+    
 }
 
 .highlight img {
@@ -437,6 +437,7 @@ footer nav li a {
      I used this table trick (wide support, inspired by this pen: https://codepen.io/thepixelninja/pen/eZVgLx*/
     .highlight {
         display: table;
+        position: relative;
     }
 
     .highlight img {
@@ -451,7 +452,6 @@ footer nav li a {
 
     .highlight:nth-of-type(odd) .col4:first-child {
         display: table-footer-group;
-        background-color: aqua;
     }
 
     .highlight:nth-of-type(odd) .col4:last-child {
