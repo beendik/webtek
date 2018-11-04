@@ -40,23 +40,42 @@
                 </div>
 
                 <div class="col2">
-                    <input type="number" name="anttrestolper" placeholder="Antall...">
+                    <div class="copyb">
+                        <input type="number" id="anttrestolper" placeholder="Antall...">
+                    </div>
+                    
                 </div>
 
                 <div class="col2">
-                        <h3>2. Velg antall enheter</h3>
-                        <p>1 dipper og 1 woodpecker er inkludert i hver bestilling</p>
+                    <h3>2. Velg antall enheter</h3>
+                    <p>1 dipper og 1 woodpecker er inkludert i hver bestilling</p>
                 </div>
 
                 <div class="col2 noarrow">
-                    <label for="antdippers"><h4>Antall dippers</h4></label>
-                    <input type="number" id="antdippers" placeholder="0">
-                    <br>
-                    <label for="antwoodpeckers"><h4>Antall woodpeckers</h4></label>
-                    <input type="number" id="antwoodpeckers" placeholder="0">
+                    <div class="copyb">
+                        <label for="dipp"><h4>Antall dippers</h4></label>
+
+                        <div class="border">
+                            <button class="plussminus minus">-</button>
+                            <input type="number" id="dipp" placeholder="0">
+                            <button class="plussminus pluss">+</button>
+                        </div>
+
+                        <br>
+
+                        <label for="wood"><h4>Antall woodpeckers</h4></label>
+
+                        <div class="border">
+                            <button class="plussminus minus">-</button>
+                            <input type="number" id="wood" placeholder="0">
+                            <button class="plussminus pluss">+</button>
+                        </div>
+                    </div>
+                    
+
                 </div>
 
-                <button>REGN UT PRIS</button>
+                <button id="regnut">REGN UT PRIS</button>
 
         </div>
         <section class="feedback">

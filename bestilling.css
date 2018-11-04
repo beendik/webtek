@@ -19,7 +19,9 @@
 
 h4 {
     font-size: 15px;
-    margin: 0;
+    margin: 20px 0 0 0;
+    color: rgba(232, 236, 248, 0.575)
+
 }
 
 .best h2 { /*Samme som .intro h2 i style.css*/
@@ -34,6 +36,45 @@ h4 {
 #epost {
     color: #F19861;
     text-align: center;
+    text-decoration: underline;
+    margin-top: 3em;
+}
+
+#regnut { /*Skal styles på samme måte som knappen øverst på forsiden, bare at den er oransj. Hvor har den cssen blitt av?*/
+    color: #F19861;
+}
+
+.plussminus, #dipp, #wood, #anttrestolper {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color:  #2A3241;
+    color: #E8ECF8;
+    padding: 15px;
+    border: 2px solid rgb(64, 74, 92);
+    font-family: inherit; /* font?? */
+}
+
+.copyb {
+    max-width: 200px;
+    margin: auto;
+}
+
+#dipp, #wood, #anttrestolper {
+    background-color:  #202631; 
+}
+
+#dipp, #wood, .plussminus {
+    width: 51px;
+    text-align: center;
+
+}
+
+.pluss {
+    border-left: none;
+}
+
+.minus {
+    border-right: none;
 }
 
 
