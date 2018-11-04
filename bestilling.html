@@ -29,10 +29,53 @@
         <div class="introb">
             <h2>Virker dette interessant?<br>Her får du et prisanslag.</h2>
         </div>
-        <div class="wrap">
-            <div class="col1"></div>
-            <div class="col2"></div>
+        <div class="highlight wrap">
+
+            
+                <div class="col2">
+                    <label for="anttrestolper">
+                        <h3>1. Velg kapasitet</h3>
+                        <p>Skriv inn antall trestolper du vil admimnistrere</p>
+                    </label>
+                </div>
+
+                <div class="col2">
+                    <input type="number" name="anttrestolper" placeholder="Antall...">
+                </div>
+
+                <div class="col2">
+                        <h3>2. Velg antall enheter</h3>
+                        <p>1 dipper og 1 woodpecker er inkludert i hver bestilling</p>
+                </div>
+
+                <div class="col2 noarrow">
+                    <label for="antdippers"><h4>Antall dippers</h4></label>
+                    <input type="number" id="antdippers" placeholder="0">
+                    <br>
+                    <label for="antwoodpeckers"><h4>Antall woodpeckers</h4></label>
+                    <input type="number" id="antwoodpeckers" placeholder="0">
+                </div>
+
+                <button>REGN UT PRIS</button>
+
         </div>
+        <section class="feedback">
+            <div class="wrap">
+                <div class="slide">
+                    <blockquote>
+                        1000 kroner
+                    </blockquote>
+                    <cite>per måned</cite>
+                </div>
+                
+            </div>
+        </section>
+
+        <div class="best">
+            <h2>Hva venter du på?<br>Send inn din bestilling her!</h2>
+        </div>
+
+        <h3 id="epost">bestill@birdsview.no</h3>
     </article>
 
 </main>
