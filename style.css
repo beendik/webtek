@@ -460,21 +460,3 @@ footer nav li a {
         font-size: 36px;
     }
 }
-
-#lesMer {
-	display: block;
-	padding: 10px 30px;
-	border: 1px #ffffff;
-	margin: 50px auto;
-	border-radius: 2px;
-	box-sizing: border-box;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 16px;
-	text-align: center;
-	transition: all 0.4s;
-}
-
-#lesMer:hover {
-	color: #e8ecf8;
-	background-color: #2a3241;
