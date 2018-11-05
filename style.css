@@ -321,6 +321,7 @@ footer nav li a {
     top: 50%;
     transform: translate(0, -50%);
     border: none;
+    cursor: pointer;
 }
 
 .feedback .navigation .prev {
