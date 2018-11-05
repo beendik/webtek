@@ -41,7 +41,7 @@
 }
 
 .contact-info {
-    background: ##2A3241;
+    background: #2A3241;
     position: relative;
     height: 300px;
 }
@@ -52,7 +52,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: ##2A3241;
+    background: #2A3241;
     font-family: "Source Sans Pro", "Trebuchet MS", sans-serif;
     font-weight: 400;
 
