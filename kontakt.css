@@ -1,0 +1,79 @@
+.map{
+    position: relative;
+}
+
+.map iframe {
+    width: 100%;
+    height: calc(((100vh - 90px)/2) + 8vh);
+}
+
+.map-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.map-content h2{
+    color: #202631;
+    font-size: 45px;
+}
+
+.contact {
+    height: calc(((100vh - 90px)/2) - 8vh);
+    background: #202631;
+    position: relative;
+
+}
+
+.contact h2 {
+    text-align: center;
+    margin: auto;
+    font-family: "Source Serif Pro", Georgia, serif;
+    font-weight: 400;
+    max-width: 700px;
+    text-transform: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+}
+
+.contact-info {
+    background: #2A3241;
+    position: relative;
+    height: 300px;
+}
+
+.boks{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #2A3241;
+    font-family: "Source Sans Pro", "Trebuchet MS", sans-serif;
+    font-weight: 400;
+
+}
+
+.phone{
+    float: left;
+
+}
+
+.email{
+    float: right;
+
+}
+
+
+@media screen and (max-width: 850px) {
+    .phone .email {
+        float: none;
+    }
+}
+
+
+

@@ -1,0 +1,11 @@
+implementere slide (Selma)
+Les mer-scroll (Anna)
+Modularitet (Bendik)
+Legge sammen all CSS
+Gjøre alt responsivt
+Skrive p3 changes
+Skrive all annen text hvis det er noe
+Regn ut-kalk (Elise)
+Lage brukertest
+Gjøre brukertest
+Rette på ting basert på brukertest
