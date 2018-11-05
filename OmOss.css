@@ -1,9 +1,5 @@
-.col4 {
-    width: 30%;
-    align-content: center;
-}
-h2.OmOss {
-    margin-top: 70px;
+.wrap.OmOss {
+    padding-top: 80px;
 }
 h2.h2Dark {
     color: #202631;
@@ -18,35 +14,14 @@ p.pDark {
     max-width: 700px;
     color: #202631;
 }
-.highlight.OmOss {
-    margin: 20px auto;
-    padding: 40px;
-}
+
 .highlight:nth-of-type(odd) {
-    background: #2A3241;
-    border-radius: none;
+    background: none;
 }
-.highlight.OmOss:nth-of-type(odd) {
-    padding-left: 40%;
-}
-@media screen and (max-width: 650px) {
-
-
-    [class*="col"] {
-        display: block;
-        width: 100%;
-    }
-    .highlight {
-        display: table;
-        position: relative;
-    }
-    .highlight:nth-of-type(odd) .col4:first-child {
-        display: table-footer-group;
-    }
-
-    .highlight:nth-of-type(odd) .col4:last-child {
-        display: table-header-group;
-    }
+.OmOss .col2 img{
+    width: 70%;
 }
 
-
+.highlight:nth-of-type(odd).OmOss .copy {
+    text-align: right;
+}
