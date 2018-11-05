@@ -24,8 +24,12 @@ h4 {
 
 }
 
-.best h2 { /*Samme som .intro h2 i style.css*/
+.best {
     text-align: center;
+}
+
+.best h2 { /*Samme som .intro h2 i style.css*/
+    
     font-family: "Source Serif Pro", Georgia, serif;
     font-weight: 400;
     max-width: 700px;
@@ -33,18 +37,12 @@ h4 {
     text-transform: none;
 }
 
-#epost {
-    color: #F19861;
-    text-align: center;
-    text-decoration: underline;
-    margin-top: 3em;
-}
-
 #regnut { /*Skal styles på samme måte som knappen øverst på forsiden, bare at den er oransj. Hvor har den cssen blitt av?*/
     color: #F19861;
+    margin-top: 5em;
 }
 
-.plussminus, #dipp, #wood, #anttrestolper {
+.plussminus, #dipp, #wood, #tre {
     padding: 10px;
     box-sizing: border-box;
     background-color:  #2A3241;
@@ -59,7 +57,7 @@ h4 {
     margin: auto;
 }
 
-#dipp, #wood, #anttrestolper {
+#dipp, #wood, #tre {
     background-color:  #202631; 
 }
 
@@ -77,5 +75,11 @@ h4 {
     border-right: none;
 }
 
+#bestwrap, #tre {
+    text-align: center;
+}
 
+.left {
+    text-align: left;
+}
 

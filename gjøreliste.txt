@@ -10,3 +10,4 @@ Lage brukertest
 Gjøre brukertest
 Rette på ting basert på brukertest
 Rydde opp i filstrukturen
+Title i head må reflektere siden man er på

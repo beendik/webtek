@@ -29,32 +29,32 @@
         <div class="introb">
             <h2>Virker dette interessant?<br>Her får du et prisanslag.</h2>
         </div>
-        <div class="highlight wrap">
+        <div class="highlight wrap" id="bestwrap">
 
             
-                <div class="col2">
+                <div class="col2 left">
                     <label for="anttrestolper">
                         <h3>1. Velg kapasitet</h3>
-                        <p>Skriv inn antall trestolper du vil admimnistrere</p>
+                        <p>Skriv inn antall trestolper du vil<br>admimnistrere.</p>
                     </label>
                 </div>
 
-                <div class="col2">
-                    <div class="copyb">
-                        <input type="number" id="anttrestolper" placeholder="Antall...">
+                <div class="col2 noarrow">
+                    <div class="border">
+                        <button class="plussminus minus" id="minust">-</button>
+                        <input type="number" id="tre" min="10000" value="10000">
+                        <button class="plussminus pluss" id="plusst">+</button>
                     </div>
-                    
                 </div>
 
-                <div class="col2">
+                <div class="col2 left">
                     <h3>2. Velg antall enheter</h3>
-                    <p>1 dipper og 1 woodpecker er inkludert i hver bestilling</p>
+                    <p>1 dipper og 1 woodpecker er inkludert<br>i hver bestilling fra før.</p>
                 </div>
 
                 <div class="col2 noarrow">
                     <div class="copyb">
                         <label for="dipp"><h4>Antall dippers</h4></label>
-
                         <div class="border">
                             <button class="plussminus minus" id="minusd">-</button>
                             <input type="number" id="dipp" min="0" value="0">
@@ -71,20 +71,18 @@
                             <button class="plussminus pluss" id="plussw">+</button>
                         </div>
                     </div>
-                    
-
                 </div>
 
-                <button id="regnut">REGN UT PRIS</button>
+                <input type="submit" id="regnut" class="call-to-action" value="REGN UT PRIS">
 
         </div>
         <section class="feedback">
             <div class="wrap">
                 <div class="slide">
                     <blockquote id="pris">
-                        1000 kroner
+                        <span id="monthlyprice">1000</span> kroner <cite>per måned.</cite>
                     </blockquote>
-                    <cite>per måned</cite>
+                    <cite>Engangspris for tilleggsbestillinger: <span id="engangspris">0</span> kr.</cite>
                 </div>
                 
             </div>
@@ -92,9 +90,10 @@
 
         <div class="best">
             <h2>Hva venter du på?<br>Send inn din bestilling her!</h2>
+            
+            <a href="mailto:bestill@birdsview.no">bestill@birdsview.no</a>
         </div>
 
-        <h3 id="epost">bestill@birdsview.no</h3>
     </article>
 
 </main>
@@ -126,5 +125,6 @@
     </div>
 </footer>
 <script type="text/javascript" src="prisanslag.js"> </script>
+<script type="text/javascript" src="lesMer.js"> </script>
 </body>
 </html>
