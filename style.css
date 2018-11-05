@@ -241,6 +241,8 @@ footer nav li a {
     margin-top: 40px;
     background: none;
     font-family: "Source Sans Pro", "Trebuchet MS", sans-serif;
+    cursor: pointer;
+    outline: none;
 }
 
 .hero-frontpage {
