@@ -1,14 +1,27 @@
- const intro = document.getElementById("intro");
-    const offset = intro.offsetTop;
-    let progress = 0;
+    const intro = document.getElementById("intro");
+    const pris = document.getElementById("pris");
+    const offsetLesMer = intro.offsetTop;
+    const offsetPris = pris.offsetTop;
+    let progressLesMer = 0;
+    let progressPris = 0;
 
-function scroll() {
-    progress += 40;
-    window.scrollTo(0,progress);
-    if (progress < offset) {
-        requestAnimationFrame(scroll)
+function scrollLesMer() {
+    progressLesMer += 40;
+    window.scrollTo(0,progressLesMer);
+    if (progressLesMer < offsetLesMer) {
+        requestAnimationFrame(scrollLesMer)
     }
-    else {progress=0}
+    else {progressLesMer=0}
 }
 
-document.getElementById("lesMer").addEventListener("click", scroll);
+function scrollPris() {
+    progressPris += 40;
+    window.scrollTo(0,progressPris);
+    if (progressPris < offsetPris) {
+        requestAnimationFrame(scrollPris)
+    }
+    else {progressPris=0}
+}
+
+document.getElementById("lesMer").addEventListener("click", scrollLesMer);
+document.getElementById("lesMer").addEventListener("click", scrollPris);
