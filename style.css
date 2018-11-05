@@ -239,6 +239,8 @@ footer nav li a {
     border-radius: 4px;
     display: inline-block;
     margin-top: 40px;
+    background: none;
+    font-family: "Source Sans Pro", "Trebuchet MS", sans-serif;
 }
 
 .hero-frontpage {
