@@ -3,12 +3,12 @@
     let progress = 0;
 
 function scroll() {
-    progress += 10;
+    progress += 40;
     window.scrollTo(0,progress);
     if (progress < offset) {
         requestAnimationFrame(scroll)
     }
+    else {progress=0}
 }
 
 document.getElementById("lesMer").addEventListener("click", scroll);
-document.getElementById("lesMer").addEventListener("click", function() {progress=0});
