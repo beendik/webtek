@@ -9,3 +9,4 @@ Regn ut-kalk (Elise)
 Lage brukertest
 Gjøre brukertest
 Rette på ting basert på brukertest
+Rydde opp i filstrukturen
