@@ -104,4 +104,7 @@ for (inp of numberInput) {
 
 
 
-regnut.addEventListener('click', prisutregning)
+regnut.addEventListener('click', function() {
+    prisutregning();
+    scroll()
+})
