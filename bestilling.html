@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Home – Birdsview</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bestilling.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+    <div class="wrap">
+        <img src="img/logo-static.svg" alt="Birdsview">
+        <input type="checkbox" id="hamburger" class="hamburger">
+        <label for="hamburger"></label>
+        <nav>
+            <ul>
+                <li><a href="#">Våre produkter</a></li>
+                <li><a class="active" href="#">Pris og bestilling</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Om oss</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+<main>
+    <article>
+        <div class="introb">
+            <h2>Virker dette interessant?<br>Her får du et prisanslag.</h2>
+        </div>
+        <div class="highlight wrap">
+
+            
+                <div class="col2">
+                    <label for="anttrestolper">
+                        <h3>1. Velg kapasitet</h3>
+                        <p>Skriv inn antall trestolper du vil admimnistrere</p>
+                    </label>
+                </div>
+
+                <div class="col2">
+                    <div class="copyb">
+                        <input type="number" id="anttrestolper" placeholder="Antall...">
+                    </div>
+                    
+                </div>
+
+                <div class="col2">
+                    <h3>2. Velg antall enheter</h3>
+                    <p>1 dipper og 1 woodpecker er inkludert i hver bestilling</p>
+                </div>
+
+                <div class="col2 noarrow">
+                    <div class="copyb">
+                        <label for="dipp"><h4>Antall dippers</h4></label>
+
+                        <div class="border">
+                            <button class="plussminus minus" id="minusd">-</button>
+                            <input type="number" id="dipp" min="0" value="0">
+                            <button class="plussminus pluss" id="plussd">+</button>
+                        </div>
+
+                        <br>
+
+                        <label for="wood"><h4>Antall woodpeckers</h4></label>
+
+                        <div class="border">
+                            <button class="plussminus minus" id="minusw">-</button>
+                            <input type="number" id="wood" min="0" value="0">
+                            <button class="plussminus pluss" id="plussw">+</button>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <button id="regnut">REGN UT PRIS</button>
+
+        </div>
+        <section class="feedback">
+            <div class="wrap">
+                <div class="slide">
+                    <blockquote id="pris">
+                        1000 kroner
+                    </blockquote>
+                    <cite>per måned</cite>
+                </div>
+                
+            </div>
+        </section>
+
+        <div class="best">
+            <h2>Hva venter du på?<br>Send inn din bestilling her!</h2>
+        </div>
+
+        <h3 id="epost">bestill@birdsview.no</h3>
+    </article>
+
+</main>
+<footer>
+    <div class="wrap">
+        <div class="col3">
+            <p><strong>Adresse</strong></p>
+            <a href="https://www.google.com/maps/place/Gr%C3%BCnderbrakka/@63.4173047,10.406738,18z/data=!3m1!4b1!4m5!3m4!1s0x466d31b3506f3cfd:0x3f2259eb72a0ebba!8m2!3d63.4173035!4d10.407835?hl=no-NO"
+               target="blank">
+                <p>Gründerbrakka</p>
+                <p>VM-paviljongen</p>
+                <p>7034 Trondheim</p>
+            </a>
+        </div>
+        <div class="col3">
+            <nav>
+                <ul>
+                    <li><a href="#">Våre produkter</a></li>
+                    <li><a href="#">Pris og bestilling</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Om oss</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col3">
+            <a href="#"><img src="img/facebook-icon.svg" alt=""></a>
+            <a href="#"><img src="img/instagram-icon.svg" alt=""></a>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="prisanslag.js"> </script>
+</body>
+</html>
