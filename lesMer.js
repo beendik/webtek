@@ -1,4 +1,4 @@
-document.getElementById("lesMer").addEventListener("click", function() {
-    setOffset(document.getElementById("intro").offsetTop);
-    scrollUntil();
+document.getElementById('lesMer').addEventListener('click', function() {
+  setOffset(document.getElementById('intro').offsetTop, window.pageYOffset);
+  scrollUntil();
 });

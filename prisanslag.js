@@ -18,7 +18,7 @@ const engangspris = document.getElementById('engangspris');
 // Anna sin scrolle-javascript her
 
 document.getElementById("regnut").addEventListener("click", function(){
-    setOffset(document.getElementById("pris1").offsetTop);
+    setOffset(document.getElementById("pris1").offsetTop, window.pageYOffset);
     scrollUntil()});
 
 //Anna sin scrolle-javascript ferdig
