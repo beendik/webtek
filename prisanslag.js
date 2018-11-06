@@ -16,21 +16,10 @@ const prisElem = document.getElementById('monthlyprice');
 const engangspris = document.getElementById('engangspris');
 
 // Anna sin scrolle-javascript her
-const pris1 = document.getElementById("pris1")
-const offsetPris = pris1.offsetTop;
-let progressPris = 0;
 
-function scrollPris() {
-    console.log();
-    progressPris += 40;
-    window.scrollTo(0,progressPris);
-    if (progressPris < offsetPris) {
-        requestAnimationFrame(scrollPris)
-    }
-    else {progressPris=0}
-}
-
-document.getElementById("regnut").addEventListener("click", scrollPris);
+document.getElementById("regnut").addEventListener("click", function(){
+    setOffset(document.getElementById("pris1").offsetTop);
+    scrollUntil()});
 
 //Anna sin scrolle-javascript ferdig
 
