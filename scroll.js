@@ -1,3 +1,5 @@
+let progress = 0
+
 function setOffset (scrollTil) {
     offset = scrollTil;
 }
