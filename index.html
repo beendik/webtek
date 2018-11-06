@@ -6,17 +6,17 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
 <header>
     <div class="wrap">
-        <img src="img/Logo-blink.png" onmouseover="this.src='img/Logo-blink.gif'" onmouseout="this.src='img/Logo-Blink.png'" alt="Birdsview">
+        <img src="img/Logo-blink.png" onmouseover="this.src='img/Logo-blink.gif'"
+             onmouseout="this.src='img/Logo-Blink.png'" alt="Birdsview">
         <input type="checkbox" id="hamburger" class="hamburger">
         <label for="hamburger"></label>
         <nav>
             <ul>
                 <li><a href="#">Våre produkter</a></li>
                 <li><a href="#">Pris og bestilling</a></li>
-                 <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Kontakt</a></li>
                 <li><a href="#">Om oss</a></li>
             </ul>
         </nav>
@@ -80,15 +80,27 @@
         </div>
         <section class="feedback">
             <div class="wrap">
-                <div class="slide">
+                <div class="slide animate-fading">
                     <blockquote>
                         Jeg har aldri prøvd noe så friksjonsløst
                     </blockquote>
                     <cite>Arne, Telenor</cite>
                 </div>
+                <div class="slide animate-fading">
+                    <blockquote>
+                        Birdsview tilbyr det beste produktet på markedet
+                    </blockquote>
+                    <cite>Rolf, TrønderEnergi</cite>
+                </div>
+                <div class="slide animate-fading">
+                    <blockquote>
+                        Jeg er veldig fornøyd med tjenesten og produktet
+                    </blockquote>
+                    <cite>Janne, Statnett</cite>
+                </div>
                 <div class="navigation">
-                    <a class="prev" href="#"><img src="img/arrow.svg" alt="Forrige"></a>
-                    <a class="next" href="#"><img src="img/arrow.svg" alt="Neste"></a>
+                    <a class="prev" onclick="runSlides(-1, true)"><img src="img/arrow.svg" alt="Forrige"></a>
+                    <a class="next" onclick="runSlides(1, true)"><img src="img/arrow.svg" alt="Neste"></a>
                 </div>
             </div>
         </section>
@@ -136,6 +148,7 @@
         </div>
     </div>
 </footer>
-<script type="text/javascript" src="lesMer.js"> </script>
+<script type="text/javascript" src="lesMer.js"></script>
+<script type="text/javascript" src="slideshow.js"></script>
 </body>
 </html>

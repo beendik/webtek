@@ -1,0 +1,27 @@
+.wrap.OmOss {
+    padding-top: 80px;
+}
+h2.h2Dark {
+    color: #202631;
+}
+p.OmOss {
+    max-width: 700px;
+    margin: auto;
+}
+p.pDark {
+    font-style: italic;
+    margin: auto;
+    max-width: 700px;
+    color: #202631;
+}
+
+.highlight:nth-of-type(odd) {
+    background: none;
+}
+.OmOss .col2 img{
+    width: 70%;
+}
+
+.highlight:nth-of-type(odd).OmOss .copy {
+    text-align: right;
+}

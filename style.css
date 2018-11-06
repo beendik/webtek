@@ -241,6 +241,8 @@ footer nav li a {
     margin-top: 40px;
     background: none;
     font-family: "Source Sans Pro", "Trebuchet MS", sans-serif;
+    cursor: pointer;
+    outline: none;
 }
 
 .hero-frontpage {
@@ -308,6 +310,7 @@ footer nav li a {
     color: #536381;
     font-size: 20px;
     font-style: normal;
+    font-family: "Source Sans Pro", "Trebuchet MS", sans-serif;
 }
 
 .feedback .navigation img {
@@ -319,6 +322,7 @@ footer nav li a {
     top: 50%;
     transform: translate(0, -50%);
     border: none;
+    cursor: pointer;
 }
 
 .feedback .navigation .prev {
@@ -329,6 +333,17 @@ footer nav li a {
 .feedback .navigation .next {
     right: 0;
     transform: translate(0, -50%) rotate(180deg);
+}
+
+.animate-fading{
+    animation:fading 4s infinite;
+}
+
+@keyframes fading{
+    0%{opacity:0}
+    30%{opacity:1}
+    70%{opacity:1}
+    100%{opacity:0}
 }
 
 .partners h2 {
@@ -395,7 +410,7 @@ footer nav li a {
         line-height: 48px;
     }
 
-    h2, .feeedback blockquote {
+    h2, .feedback blockquote { 
         font-size: 30px;
         line-height: 44px;
     }
