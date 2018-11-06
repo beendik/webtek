@@ -15,6 +15,25 @@ let antTre, antDipp, antWood;
 const prisElem = document.getElementById('monthlyprice');
 const engangspris = document.getElementById('engangspris');
 
+// Anna sin scrolle-javascript her
+const pris1 = document.getElementById("pris1")
+const offsetPris = pris1.offsetTop;
+let progressPris = 0;
+
+function scrollPris() {
+    console.log();
+    progressPris += 40;
+    window.scrollTo(0,progressPris);
+    if (progressPris < offsetPris) {
+        requestAnimationFrame(scrollPris)
+    }
+    else {progressPris=0}
+}
+
+document.getElementById("regnut").addEventListener("click", scrollPris);
+
+//Anna sin scrolle-javascript ferdig
+
 function checkInput() {
     console.log(this.value);
     if (this.value == '') {
@@ -108,3 +127,5 @@ regnut.addEventListener('click', function() {
     prisutregning();
     scroll()
 })
+
+
