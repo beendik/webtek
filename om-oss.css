@@ -22,6 +22,16 @@ p.pDark {
     width: 70%;
 }
 
+.highlight.OmOss {
+    padding: 020px;
+}
+
 .highlight:nth-of-type(odd).OmOss .copy {
     text-align: right;
+}
+
+@media screen and (max-width: 650px) {
+    .highlight.OmOss .copy, .highlight:nth-of-type(odd).OmOss .copy {
+        text-align: center;
+    }
 }
