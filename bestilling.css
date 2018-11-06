@@ -13,15 +13,14 @@
     text-transform: none;
 }
 
-.noarrow input[type=number]::-webkit-inner-spin-button{
+.noarrow input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
 h4 {
     font-size: 15px;
-    margin: 20px 0 0 0;
+    margin: 25px 0 10px 0;
     color: rgba(232, 236, 248, 0.575)
-
 }
 
 .best {
@@ -29,7 +28,7 @@ h4 {
 }
 
 .best h2 { /*Samme som .intro h2 i style.css*/
-    
+
     font-family: "Source Serif Pro", Georgia, serif;
     font-weight: 400;
     max-width: 700px;
@@ -43,13 +42,13 @@ h4 {
 }
 
 .plussminus, #dipp, #wood, #tre {
-    padding: 10px;
     box-sizing: border-box;
-    background-color:  #2A3241;
+    background-color: #2A3241;
     color: #E8ECF8;
     padding: 15px;
     border: 2px solid rgb(64, 74, 92);
-    font-family: inherit; /* font?? */
+    font-size: 16px;
+    font-family: "Source Sans Pro", "Trebuchet MS", sans-serif;
 }
 
 .copyb {
@@ -58,7 +57,7 @@ h4 {
 }
 
 #dipp, #wood, #tre {
-    background-color:  #202631; 
+    background-color: #202631;
 }
 
 #dipp, #wood, .plussminus {
