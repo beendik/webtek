@@ -1,5 +1,4 @@
 implementere slide (Selma)
-Les mer-scroll (Anna)
 Modularitet (Bendik)
 Legge sammen all CSS
 Gjøre alt responsivt
@@ -8,6 +7,9 @@ Skrive all annen text hvis det er noe
 Regn ut-kalk (Elise)
 Lage brukertest
 Gjøre brukertest
-Rette på ting basert på brukertest
+Rette på ting basert på brukertest (dette er ikke obligatorisk)
 Rydde opp i filstrukturen
 Title i head må reflektere siden man er på
+Skrive inn når bedriften startet opp i "OM OSS"-teksten (fordi vi skrev i P2 at denne siden skulle fortelle om historien
+til bedriften)
+Flytte alle scroll-tingene til en fil (hvis tid)
