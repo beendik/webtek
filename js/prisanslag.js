@@ -13,6 +13,7 @@ const trestolpe = document.getElementById('trestolper'),
 
 let antallTrestolper, antallDippers, antallWoodpeckers;
 
+//Makes sure the number is within the allowed range
 function checkInput(inputelement) {
   if (inputelement.value < 1) {
     inputelement.value = 1;
@@ -21,11 +22,13 @@ function checkInput(inputelement) {
   }
 }
 
+//Calculates prices
 function prisutregning() {
   prisElem.innerHTML = parseInt(trestolpe.value) * 5;
   engangspris.innerHTML = parseInt(dipperInput.value) * 5000 + parseInt(woodpeckerInput.value) * 10000;
 }
 
+//Adds event listeners
 plussWoodpecker.addEventListener('click', function() {
   antallWoodpeckers = parseInt(woodpeckerInput.value);
   antallWoodpeckers += 1;

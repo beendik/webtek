@@ -18,6 +18,7 @@ function scrollUntil() {
 
 let initializer, target;
 
+//Lets the code be reused
 if (window.location.pathname.split('/').pop() === 'index.html') {
   initializer = document.getElementById('lesMer');
   target = document.getElementById('intro');
@@ -26,7 +27,6 @@ if (window.location.pathname.split('/').pop() === 'index.html') {
   initializer = document.getElementById('regnut');
   target = document.getElementById('prisvisning');
 }
-
 
 initializer.addEventListener('click', function() {
   setOffset(target.offsetTop, window.pageYOffset);
