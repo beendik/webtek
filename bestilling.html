@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Bestilling – Birdsview</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bestilling.css">
     <link rel="import" href="header.html">
     <link rel="import" href="footer.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,7 @@
 <script src="js/loadContent.js"></script>
 <main>
     <article>
-        <div class="introb">
+        <div class="intro brighter">
             <h2>Virker dette interessant? <br> Her får du et prisanslag.</h2>
         </div>
         <div class="highlight wrap" id="bestwrap">
@@ -40,8 +39,8 @@
                 </div>
 
                 <div class="col2 noarrow">
-                    <div class="copyb">
-                        <label for="dipp"><span class="h4">Antall dippers</span></label>
+                    <div class="copy tallinput">
+                        <label for="dipp"><span>Antall dippers</span></label>
                         <div class="border">
                             <button class="plussminus minus" id="minusd">-</button>
                             <input type="number" id="dipp" min="1" value="1">
@@ -50,7 +49,7 @@
 
                         <br>
 
-                        <label for="wood"><span class="h4">Antall woodpeckers</span></label>
+                        <label for="wood"><span>Antall woodpeckers</span></label>
 
                         <div class="border">
                             <button class="plussminus minus" id="minusw">-</button>
@@ -75,10 +74,9 @@
             </div>
         </div>
 
-        <div class="best">
-            <h2>Hva venter du på?<br>Send inn din bestilling her!</h2>
-            
-            <a href="mailto:bestill@birdsview.no">bestill@birdsview.no</a>
+        <div class="intro order-link-section">
+            <h2><i>Hva venter du på?</i></h2><br>        
+            <a href="mailto:bestill@birdsview.no">Send inn din bestilling her!</a>
         </div>
 
     </article>
