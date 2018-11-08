@@ -34,7 +34,7 @@ img {
 }
 
 label[for="hamburger"] {
-    background: rgba(42, 50, 65, 0.7) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='%2392B7CE' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='4' rx='2' ry='2' /><rect y='24' width='30' height='4' rx='2' ry='2' /><rect y='12' width='30' height='4' rx='2' ry='2' /></svg>") no-repeat center;
+    background: rgba(42, 50, 65, 0.7) url("data:../image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='%2392B7CE' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='4' rx='2' ry='2' /><rect y='24' width='30' height='4' rx='2' ry='2' /><rect y='12' width='30' height='4' rx='2' ry='2' /></svg>") no-repeat center;
     width: 30px;
     height: 30px;
     padding: 12px 13px;
@@ -251,7 +251,7 @@ footer nav li a {
 
 .hero-frontpage {
     height: calc(100vh - 90px); /* So that the navbar and the hero together is covering the screen*/
-    background: #555 url("img/hero-pole.jpg") center;
+    background: #555 url("../img/hero-pole.jpg") center;
     background-size: cover;
     background-blend-mode: overlay;
 }
