@@ -16,16 +16,20 @@ function scrollUntil() {
   }
 }
 
-let initializer;
+let initializer, target;
 
 if (window.location.pathname.split('/').pop() === 'index.html') {
   initializer = document.getElementById('lesMer');
+  target = document.getElementById('intro');
+
 } else if (window.location.pathname.split('/').pop() === 'bestilling.html') {
   initializer = document.getElementById('regnut');
+  target = document.getElementById('prisvisning');
 }
 
+
 initializer.addEventListener('click', function() {
-  setOffset(document.getElementById('intro').offsetTop, window.pageYOffset);
+  setOffset(target.offsetTop, window.pageYOffset);
   scrollUntil();
 });
 
