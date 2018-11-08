@@ -13,14 +13,6 @@ const tre = document.getElementById('tre'),
 
 let antTre, antDipp, antWood;
 
-// Anna sin scrolle-javascript her
-document.getElementById('regnut').addEventListener('click', function() {
-  setOffset(document.getElementById('pris1').offsetTop, window.pageYOffset);
-  scrollUntil();
-});
-
-//Anna sin scrolle-javascript ferdig
-
 function checkInput(inputelement) {
   if (inputelement.value < 1) {
     inputelement.value = 1;
