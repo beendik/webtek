@@ -667,7 +667,7 @@ p.OmOss {
     -webkit-appearance: none;
 }
 
-label[for=dipper] span, label[for=woodpecker] span {
+label[for=dipper-input] span, label[for=woodpecker-input] span {
     font-size: 18px;
     margin: 15px 0 5px 0;
     display: inline-block;
