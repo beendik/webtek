@@ -1,4 +1,6 @@
-/*  Generelle */
+/*  =========
+    Generelle
+    ========= */
 
 html, body {
     margin: 0;
@@ -213,7 +215,9 @@ footer nav li a {
     font-size: 18px;
 }
 
-/* Forside */
+/* =======
+   Forside
+   ======= */
 
 .hero {
     position: relative;
@@ -477,7 +481,9 @@ footer nav li a {
     }
 }
 
-/*Kontakt*/
+/* =======
+   KONTAKT
+   =======*/
 .map {
     position: relative;
 }
@@ -541,7 +547,9 @@ footer nav li a {
     }
 }
 
-/*Om Oss*/
+/* ======
+   OM OSS
+   ======*/
 .wrap.OmOss {
     padding-top: 80px;
 }
@@ -553,13 +561,6 @@ h2.h2Dark {
 p.OmOss {
     max-width: 700px;
     margin: auto;
-}
-
-p.pDark {
-    font-style: italic;
-    margin: auto;
-    max-width: 700px;
-    color: #202631;
 }
 
 .highlight:nth-of-type(odd) {
