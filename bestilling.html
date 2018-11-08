@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="import" href="header.html">
     <link rel="import" href="footer.html">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -17,56 +20,56 @@
         </div>
         <div class="highlight wrap" id="bestwrap">
 
-                <div class="col2 left">
-                    <label for="trestolper">
-                        <span>1. Velg kapasitet</span><br>
-                        <span>Skriv inn antall trestolper du vil<br>administrere.</span>
-                    </label>
-                </div>
+            <div class="col2 left">
+                <label for="trestolper">
+                    <span>1. Velg kapasitet</span><br>
+                    <span>Skriv inn antall trestolper du vil<br>administrere.</span>
+                </label>
+            </div>
 
-                <div class="col2 noarrow">
+            <div class="col2 noarrow">
+                <div class="border">
+                    <button class="plussminus minus" id="minus-trestolper">-</button>
+                    <input type="number" id="trestolper" min="10000" value="10000">
+                    <button class="plussminus pluss" id="pluss-trestolper">+</button>
+                </div>
+            </div>
+
+            <div class="col2 left">
+                <h3>2. Velg antall enheter</h3><br>
+                <p>1 dipper og 1 woodpecker er inkludert<br>i hver bestilling.</p>
+            </div>
+
+            <div class="col2 noarrow">
+                <div class="copy tallinput">
+                    <label for="dipper"><span>Antall dippers</span></label>
                     <div class="border">
-                        <button class="plussminus minus" id="minus-trestolper">-</button>
-                        <input type="number" id="trestolper" min="10000" value="10000">
-                        <button class="plussminus pluss" id="pluss-trestolper">+</button>
+                        <button class="plussminus minus" id="minus-dipper">-</button>
+                        <input type="number" id="dipper-input" min="1" value="1">
+                        <button class="plussminus pluss" id="pluss-dipper">+</button>
+                    </div>
+
+                    <br>
+
+                    <label for="woodpecker"><span>Antall woodpeckers</span></label>
+
+                    <div class="border">
+                        <button class="plussminus minus" id="minus-woodpecker">-</button>
+                        <input type="number" id="woodpecker-input" min="1" value="1">
+                        <button class="plussminus pluss" id="pluss-woodpecker">+</button>
                     </div>
                 </div>
+            </div>
 
-                <div class="col2 left">
-                        <h3>2. Velg antall enheter</h3><br>
-                        <p>1 dipper og 1 woodpecker er inkludert<br>i hver bestilling.</p>
-                </div>
-
-                <div class="col2 noarrow">
-                    <div class="copy tallinput">
-                        <label for="dipper"><span>Antall dippers</span></label>
-                        <div class="border">
-                            <button class="plussminus minus" id="minus-dipper">-</button>
-                            <input type="number" id="dipper-input" min="1" value="1">
-                            <button class="plussminus pluss" id="pluss-dipper">+</button>
-                        </div>
-
-                        <br>
-
-                        <label for="woodpecker"><span>Antall woodpeckers</span></label>
-
-                        <div class="border">
-                            <button class="plussminus minus" id="minus-woodpecker">-</button>
-                            <input type="number" id="woodpecker-input" min="1" value="1">
-                            <button class="plussminus pluss" id="pluss-woodpecker">+</button>
-                        </div>
-                    </div>
-                </div>
-
-                <input type="submit" id="regnut" class="call-to-action" value="REGN UT PRIS">
+            <input type="submit" id="regnut" class="call-to-action" value="REGN UT PRIS">
 
         </div>
-       <div id="prisvisning" class="feedback">
+        <div id="prisvisning" class="feedback">
             <div class="wrap">
                 <div class="slide">
                     <div class="price" id="pris">
                         <span id="monthlyprice">0</span> kroner per måned<br>
-                         <span>Engangspris for tilleggsbestillinger: <span id="engangspris">0</span> kr.</span>
+                        <span>Engangspris for tilleggsbestillinger: <span id="engangspris">0</span> kr.</span>
                     </div>
                 </div>
 
@@ -81,7 +84,7 @@
     </article>
 
 </main>
-<script src="js/scroll.js"> </script>
-<script src="js/prisanslag.js"> </script>
+<script src="js/scroll.js"></script>
+<script src="js/prisanslag.js"></script>
 </body>
 </html>
