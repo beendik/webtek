@@ -6,6 +6,8 @@ function setOffset(scrollTil, scrollFra) {
   progress = scrollFra;
 }
 
+// running the scroll function until it has scrolled the right amount
+
 function scrollUntil() {
   progress += 40;
   window.scrollTo(0, progress);
@@ -18,7 +20,8 @@ function scrollUntil() {
 
 let initializer, target;
 
-//Lets the code be reused
+// comparing the file name of the current site to find the right trigger and target elements
+
 if (window.location.pathname.split('/').pop() === 'index.html') {
   initializer = document.getElementById('lesMer');
   target = document.getElementById('intro');
@@ -27,6 +30,9 @@ if (window.location.pathname.split('/').pop() === 'index.html') {
   initializer = document.getElementById('regnut');
   target = document.getElementById('prisvisning');
 }
+
+
+// adding the eventlistener to trigger element, adding correct target
 
 initializer.addEventListener('click', function() {
   setOffset(target.offsetTop, window.pageYOffset);
