@@ -6,7 +6,7 @@
     if (isClicked) {
       counting += n;
       clearTimeout(timer);
-      timer = setTimeout(runSlides, 4000);
+      timer = setTimeout(runSlides, 6000);
     } else {
       counting++;
     }
@@ -24,6 +24,6 @@
 
     slides[counting - 1].style.display = 'block';
     if (!isClicked) {
-      timer = setTimeout(runSlides, 4000);
+      timer = setTimeout(runSlides, 6000);
     }
   }
