@@ -1,4 +1,56 @@
 /*  =========
+    Webfonter
+    ========= */
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Regular.woff2') format('woff2'),
+    url('../fonts/SourceSansPro-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('../fonts/SourceSerifPro-It.woff2') format('woff2'),
+    url('../fonts/SourceSerifPro-It.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Bold.woff2') format('woff2'),
+    url('../fonts/SourceSansPro-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('../fonts/SourceSerifPro-Bold.woff2') format('woff2'),
+    url('../fonts/SourceSerifPro-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('../fonts/SourceSerifPro-Regular.woff2') format('woff2'),
+    url('../fonts/SourceSerifPro-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Semibold.woff2') format('woff2'),
+    url('../fonts/SourceSansPro-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/*  =========
     Generelle
     ========= */
 
@@ -106,7 +158,6 @@ h2 {
     color: white;
     font-weight: 700;
 }
-
 
 h3, label span:first-child {
     font-weight: 700;
@@ -343,15 +394,23 @@ footer nav li a {
     transform: translate(0, -50%) rotate(180deg);
 }
 
-.animate-fading{
-    animation:fading 6s infinite;
+.animate-fading {
+    animation: fading 6s infinite;
 }
 
-@keyframes fading{
-    0%{opacity:0}
-    40%{opacity:1}
-    80%{opacity:1}
-    100%{opacity:0}
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+    80% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
 }
 
 .partners h2 {
@@ -418,7 +477,7 @@ footer nav li a {
         line-height: 48px;
     }
 
-    h2, .feedback blockquote { 
+    h2, .feedback blockquote {
         font-size: 30px;
         line-height: 44px;
     }
@@ -545,7 +604,7 @@ footer nav li a {
         padding-top: 8px;
     }
 
-    .boks{
+    .boks {
         padding: 40px 0 120px 0;
     }
 }
@@ -571,7 +630,7 @@ p.OmOss {
     background: none;
 }
 
-.OmOss .col2 img{
+.OmOss .col2 img {
     width: 70%;
 }
 
@@ -589,7 +648,6 @@ p.OmOss {
     }
 }
 
-
 /*  ============
     BESTILLING
     ============  */
@@ -602,7 +660,7 @@ p.OmOss {
     -webkit-appearance: none;
 }
 
-label[for=dipper] span, label[for=woodpecker] span{
+label[for=dipper] span, label[for=woodpecker] span {
     font-size: 18px;
     margin: 15px 0 5px 0;
     display: inline-block;
@@ -669,9 +727,8 @@ label[for=trestolper] span:first-child {
 .intro.order-link-section a {
     position: absolute;
     left: 50%;
-    transform:translate(-50%,0);
+    transform: translate(-50%, 0);
 }
-
 
 /*  ==========
     PRODUKTER
