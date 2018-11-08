@@ -297,7 +297,7 @@ footer nav li a {
     text-align: center;
 }
 
-.feedback blockquote {
+.feedback blockquote, .price {
     font-size: 40px;
     color: #202631;
     font-family: "Source Serif Pro", Georgia, serif;
@@ -306,7 +306,7 @@ footer nav li a {
     font-style: italic;
 }
 
-.feedback cite {
+.feedback cite, .price span {
     color: #536381;
     font-size: 20px;
     font-style: normal;
