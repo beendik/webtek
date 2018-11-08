@@ -564,6 +564,7 @@ h2.h2Dark {
 p.OmOss {
     max-width: 700px;
     margin: auto;
+    line-height: 30px;
 }
 
 .highlight.OmOss:nth-of-type(odd) {
@@ -601,10 +602,13 @@ p.OmOss {
     -webkit-appearance: none;
 }
 
-label[for=dipp], lbel[for=wood] {
-    font-size: 15px;
-    margin: 25px 0 10px 0;
-    color: rgba(232, 236, 248, 0.575)
+label[for=dipp] span, label[for=wood] span{
+    font-size: 18px;
+    margin: 15px 0 5px 0;
+    display: inline-block;
+    color: rgba(232, 236, 248, 0.575);
+    font-family: "Source Sans Pro", "Trebuchet MS", sans-serif;
+    font-weight: normal;
 }
 
 .intro.order-link-section {
@@ -630,6 +634,11 @@ label[for=dipp], lbel[for=wood] {
 .copy.tallinput {
     max-width: 200px;
     margin: auto;
+}
+
+label[for=tre] span:first-child {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 #dipp, #wood, #tre {
