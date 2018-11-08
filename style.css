@@ -108,13 +108,13 @@ h2 {
 }
 
 
-h3, .h3 {
+h3, label span:first-child {
     font-weight: 700;
     font-size: 24px;
     margin: 0;
 }
 
-p, .p {
+p, label span:last-child {
     font-family: "Source Serif Pro", Georgia, serif;
     font-size: 18px;
     line-height: 28px;
