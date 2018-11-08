@@ -602,7 +602,7 @@ p.OmOss {
     -webkit-appearance: none;
 }
 
-label[for=dipp] span, label[for=wood] span{
+label[for=dipper] span, label[for=woodpecker] span{
     font-size: 18px;
     margin: 15px 0 5px 0;
     display: inline-block;
@@ -621,7 +621,7 @@ label[for=dipp] span, label[for=wood] span{
     margin-top: 5em;
 }
 
-.plussminus, #dipp, #wood, #tre {
+.plussminus, #dipper, #woodpecker, #trestolper {
     box-sizing: border-box;
     background-color: #2A3241;
     color: #E8ECF8;
@@ -636,16 +636,16 @@ label[for=dipp] span, label[for=wood] span{
     margin: auto;
 }
 
-label[for=tre] span:first-child {
+label[for=trestolper] span:first-child {
     display: inline-block;
     margin-bottom: 16px;
 }
 
-#dipp, #wood, #tre {
+#dipper, #woodpecker, #trestolper {
     background-color: #202631;
 }
 
-#dipp, #wood, .plussminus {
+#dipper, #woodpecker, .plussminus {
     width: 51px;
     text-align: center;
 }
@@ -658,7 +658,7 @@ label[for=tre] span:first-child {
     border-right: none;
 }
 
-#bestwrap, #tre {
+#bestwrap, #trestolper {
     text-align: center;
 }
 
