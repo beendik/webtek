@@ -301,7 +301,7 @@ footer nav li a {
     text-align: center;
 }
 
-.feedback blockquote, .price {
+.feedback blockquote, .price, #monthlyprice {
     font-size: 40px;
     color: #202631;
     font-family: "Source Serif Pro", Georgia, serif;
