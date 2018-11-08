@@ -96,7 +96,7 @@ label[for="hamburger"] {
     transform: translate(50%, -50%);
     right: 45px;
     z-index: 3;
-    position: fixed;
+    position: absolute;
     display: none;
     transition: transform .07s ease-in-out;
 
@@ -225,14 +225,14 @@ nav li:last-child a {
 footer {
     background: #202631;
     height: 50vh;
-    min-height: 500px;
+    min-height: 600px;
     position: relative;
 }
 
 footer .wrap {
     position: relative;
     top: 50%;
-    transform: translate(7%, -50%); /* the 7% are visual balance adjustment */
+    transform: translate(7%, -50%); /* the 7% are a visual balance adjustment */
 }
 
 footer p {
@@ -503,25 +503,27 @@ footer nav li a {
     I had to alter the HTML element order to alternate img placement left/right. */
     /* In order for the images in the altered highlight sections to be above the text,
      I used this table trick (wide support, inspired by this pen: https://codepen.io/thepixelninja/pen/eZVgLx*/
-    .highlight {
+    .highlight, .product {
         display: table;
     }
 
-    .highlight img {
-        margin-bottom: 70px;
+    .highlight img, .product img {
+        margin: 0 auto 70px;
         max-width: 380px;
+        display: block;
+
     }
 
-    .highlight:nth-of-type(odd) {
+    .highlight:nth-of-type(odd), .product:nth-of-type(odd) {
         padding: 70px 5%;
         border-spacing: 10px; /* because padding doesn't work on table-groups */
     }
 
-    .highlight:nth-of-type(odd) .col2:first-child {
+    .highlight:nth-of-type(odd) .col2:first-child, .product:nth-of-type(odd) .col2:first-child {
         display: table-footer-group;
     }
 
-    .highlight:nth-of-type(odd) .col2:last-child {
+    .highlight:nth-of-type(odd) .col2:last-child .product:nth-of-type(odd) .col2:last-child {
         display: table-header-group;
     }
 
@@ -632,6 +634,7 @@ p.OmOss {
 
 .OmOss .col2 img {
     width: 70%;
+    background-color: #E8ECF8;
 }
 
 .highlight.OmOss {
