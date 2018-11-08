@@ -28,7 +28,11 @@ function prisutregning() {
   engangspris.innerHTML = parseInt(dipperInput.value) * 5000 + parseInt(woodpeckerInput.value) * 10000;
 }
 
-//Adds event listeners
+
+//ADDS EVENT LISTENERS
+
+//To the plus and minus buttons. It looks like a loop could be used here, but the small differences between them
+//made this an insensible thing to do.
 plussWoodpecker.addEventListener('click', function() {
   antallWoodpeckers = parseInt(woodpeckerInput.value);
   antallWoodpeckers += 1;
@@ -73,12 +77,24 @@ minusTrestolper.addEventListener('click', function() {
   }
 });
 
+//To the input fields. The number will be changed to a more appropriate number if the input is to small or large.
 trestolpe.addEventListener('change', function() {
   if (trestolpe.value < 10000) {
     trestolpe.value = 10000;
+  } else if (trestolpe.value > 99999999) {
+    trestolpe.value = 99999999;
   }
 });
 
+dipperInput.addEventListener('change',function() {
+  checkInput(dipperInput);
+});
+
+woodpeckerInput.addEventListener('change',function() {
+  checkInput(woodpeckerInput);
+});
+
+//Calculates the price and scrolls down the page to show the results
 regnut.addEventListener('click', function() {
   prisutregning();
   scroll();
