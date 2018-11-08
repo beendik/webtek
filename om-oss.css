@@ -1,3 +1,4 @@
+/*Om Oss*/
 .wrap.OmOss {
     padding-top: 80px;
 }
@@ -14,22 +15,18 @@ p.pDark {
     max-width: 700px;
     color: #202631;
 }
-
 .highlight:nth-of-type(odd) {
     background: none;
 }
 .OmOss .col2 img{
     width: 70%;
 }
-
 .highlight.OmOss {
     padding: 20px;
 }
-
 .highlight:nth-of-type(odd).OmOss .copy {
     text-align: right;
 }
-
 @media screen and (max-width: 650px) {
     .highlight.OmOss .copy, .highlight:nth-of-type(odd).OmOss .copy {
         text-align: center;
