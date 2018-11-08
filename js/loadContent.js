@@ -22,8 +22,8 @@ for (let item of navItems) {
   console.log(blunk);
 
   blunk.onmouseover = function() {
-    this.src = 'img/logo-blink.gif';
+    this.src = 'img/GIF/logo-blink.gif';
   };
   blunk.onmouseleave = function() {
-    this.src = 'img/logo-blink.png';
+    this.src = 'img/GIF/logo-blink.png';
   };
