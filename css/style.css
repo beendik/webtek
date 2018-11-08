@@ -723,6 +723,10 @@ label[for=trestolper] span:first-child {
     text-align: center;
 }
 
+#trestolper {
+    width: 150px;
+}
+
 .left {
     text-align: left;
 }
