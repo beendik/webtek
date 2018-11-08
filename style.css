@@ -563,7 +563,7 @@ p.OmOss {
     margin: auto;
 }
 
-.highlight:nth-of-type(odd) {
+.highlight.OmOss:nth-of-type(odd) {
     background: none;
 }
 
