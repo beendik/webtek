@@ -1,17 +1,17 @@
-const tre = document.getElementById('tre'),
-    dipp = document.getElementById('dipp'),
-    wood = document.getElementById('wood'),
+const trestolpe = document.getElementById('tre'),
+    dipperInput = document.getElementById('dipp'),
+    woodpeckerInput = document.getElementById('wood'),
     regnut = document.getElementById('regnut'),
-    plussD = document.getElementById('plussd'),
-    minusD = document.getElementById('minusd'),
-    plussW = document.getElementById('plussw'),
-    minusW = document.getElementById('minusw'),
-    plussT = document.getElementById('plusst'),
-    minusT = document.getElementById('minust'),
+    plussDipper = document.getElementById('plussd'),
+    minusDipper = document.getElementById('minusd'),
+    plussWoodpecker = document.getElementById('plussw'),
+    minusWoodpecker = document.getElementById('minusw'),
+    plussTrestolper = document.getElementById('plusst'),
+    minusTrestolper = document.getElementById('minust'),
     prisElem = document.getElementById('monthlyprice'),
     engangspris = document.getElementById('engangspris');
 
-let antTre, antDipp, antWood;
+let antallTrestolper, antallDippers, antallWoodpeckers;
 
 function checkInput(inputelement) {
   if (inputelement.value < 1) {
@@ -22,57 +22,57 @@ function checkInput(inputelement) {
 }
 
 function prisutregning() {
-  prisElem.innerHTML = parseInt(tre.value) * 5;
-  engangspris.innerHTML = parseInt(dipp.value) * 5000 + parseInt(wood.value) * 10000;
+  prisElem.innerHTML = parseInt(trestolpe.value) * 5;
+  engangspris.innerHTML = parseInt(dipperInput.value) * 5000 + parseInt(woodpeckerInput.value) * 10000;
 }
 
-plussW.addEventListener('click', function() {
-  antWood = parseInt(wood.value);
-  antWood += 1;
-  wood.value = antWood;
-  checkInput(wood);
+plussWoodpecker.addEventListener('click', function() {
+  antallWoodpeckers = parseInt(woodpeckerInput.value);
+  antallWoodpeckers += 1;
+  woodpeckerInput.value = antallWoodpeckers;
+  checkInput(woodpeckerInput);
 });
 
-minusW.addEventListener('click', function() {
-  antWood = parseInt(wood.value);
-  antWood -= 1;
-  wood.value = antWood;
-  checkInput(wood);
+minusWoodpecker.addEventListener('click', function() {
+  antallWoodpeckers = parseInt(woodpeckerInput.value);
+  antallWoodpeckers -= 1;
+  woodpeckerInput.value = antallWoodpeckers;
+  checkInput(woodpeckerInput);
 });
 
-plussD.addEventListener('click', function() {
-  antDipp = parseInt(dipp.value);
-  antDipp += 1;
-  dipp.value = antDipp;
-  checkInput(dipp);
+plussDipper.addEventListener('click', function() {
+  antallDippers = parseInt(dipperInput.value);
+  antallDippers += 1;
+  dipperInput.value = antallDippers;
+  checkInput(dipperInput);
 });
 
-minusD.addEventListener('click', function() {
-  antDipp = parseInt(dipp.value);
-  antDipp -= 1;
-  dipp.value = antDipp;
-  checkInput(dipp);
+minusDipper.addEventListener('click', function() {
+  antallDippers = parseInt(dipperInput.value);
+  antallDippers -= 1;
+  dipperInput.value = antallDippers;
+  checkInput(dipperInput);
 });
 
-plussT.addEventListener('click', function() {
-  antTre = parseInt(tre.value);
-  antTre += 10000;
-  tre.value = antTre;
+plussTrestolper.addEventListener('click', function() {
+  antallTrestolper = parseInt(trestolpe.value);
+  antallTrestolper += 10000;
+  trestolpe.value = antallTrestolper;
 });
 
-minusT.addEventListener('click', function() {
-  antTre = parseInt(tre.value);
-  antTre -= 10000;
-
-  tre.value = antTre;
-  if (tre.value < 10000) {
-    tre.value = 10000;
+minusTrestolper.addEventListener('click', function() {
+  antallTrestolper = parseInt(trestolpe.value);
+  antallTrestolper -= 10000;
+  trestolpe.value = antallTrestolper;
+  
+  if (trestolpe.value < 10000) {
+    trestolpe.value = 10000;
   }
 });
 
-tre.addEventListener('change', function() {
-  if (tre.value < 10000) {
-    tre.value = 10000;
+trestolpe.addEventListener('change', function() {
+  if (trestolpe.value < 10000) {
+    trestolpe.value = 10000;
   }
 });
 
