@@ -676,7 +676,7 @@ label[for=dipper] span, label[for=woodpecker] span {
     padding: 0;
 }
 
-#regnut { /*Skal styles på samme måte som knappen øverst på forsiden, bare at den er oransj. Hvor har den cssen blitt av?*/
+#regnut {
     color: #F19861;
     margin-top: 5em;
 }

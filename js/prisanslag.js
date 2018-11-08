@@ -64,7 +64,7 @@ minusTrestolper.addEventListener('click', function() {
   antallTrestolper = parseInt(trestolpe.value);
   antallTrestolper -= 10000;
   trestolpe.value = antallTrestolper;
-  
+
   if (trestolpe.value < 10000) {
     trestolpe.value = 10000;
   }
