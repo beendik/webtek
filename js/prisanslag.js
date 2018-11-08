@@ -23,12 +23,12 @@ document.getElementById("regnut").addEventListener("click", function(){
 function checkInput() {
   console.log(this.value);
   if (this.value == '') {
-      this.value = '0';
+      this.value = '1';
   }
   else {
     let n = parseInt(this.value);
-    if (n < 0) {
-        n = 0;
+    if (n < 1) {
+        n = 1;
     }
     if (n > 99) {
         n = 99;
