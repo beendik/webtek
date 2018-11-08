@@ -1,6 +1,6 @@
 const trestolpe = document.getElementById('trestolper'),
-    dipperInput = document.getElementById('dipper'),
-    woodpeckerInput = document.getElementById('woodpecker'),
+    dipperInput = document.getElementById('dipper-input'),
+    woodpeckerInput = document.getElementById('woodpecker-input'),
     regnut = document.getElementById('regnut'),
     plussDipper = document.getElementById('pluss-dipper'),
     minusDipper = document.getElementById('minus-dipper'),
