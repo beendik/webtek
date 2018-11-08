@@ -316,6 +316,9 @@ footer nav li a {
     font-style: normal;
     font-family: "Source Sans Pro", "Trebuchet MS", sans-serif;
     max-width: 600px;
+    display: inline-block;
+    line-height: 28px;
+    margin-top: 10px;
 }
 
 .feedback .navigation img {
@@ -563,7 +566,7 @@ p.OmOss {
     margin: auto;
 }
 
-.highlight:nth-of-type(odd) {
+.highlight.OmOss:nth-of-type(odd) {
     background: none;
 }
 

@@ -5,25 +5,24 @@ document.querySelector('body').insertBefore(header, document.querySelector('body
 
 window.onload = async function() {
   document.querySelector('body').appendChild(footer);
-};
-
-let navItems = document.querySelectorAll('nav li a');
-let pageName = window.location.pathname.split('/').pop();
-for (let item of navItems) {
-  let href = item.href.split('/').pop();
-  if (href === pageName) {
-    item.classList.add('active');
+  let navItems = document.querySelectorAll('nav li a');
+  let pageName = window.location.pathname.split('/').pop();
+  for (let item of navItems) {
+    let href = item.href.split('/').pop();
+    if (href === pageName) {
+      item.classList.add('active');
+    }
   }
-}
+};
 
 // load blinking logo
 
-  const blunk = document.getElementById('blunk');
-  console.log(blunk);
+const blunk = document.getElementById('blunk');
+console.log(blunk);
 
-  blunk.onmouseover = function() {
-    this.src = 'img/GIF/logo-blink.gif';
-  };
-  blunk.onmouseleave = function() {
-    this.src = 'img/logo-blink.png';
-  };
+blunk.onmouseover = function() {
+  this.src = 'img/GIF/logo-blink.gif';
+};
+blunk.onmouseleave = function() {
+  this.src = 'img/logo-blink.png';
+};
