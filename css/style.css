@@ -232,7 +232,7 @@ footer {
 footer .wrap {
     position: relative;
     top: 50%;
-    transform: translate(7%, -50%); /* the 7% are visual balance adjustment */
+    transform: translate(7%, -50%); /* the 7% are a visual balance adjustment */
 }
 
 footer p {
@@ -634,6 +634,7 @@ p.OmOss {
 
 .OmOss .col2 img {
     width: 70%;
+    background-color: #E8ECF8;
 }
 
 .highlight.OmOss {
