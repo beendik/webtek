@@ -186,7 +186,7 @@ header img {
     display: inline-block;
     position: absolute;
     top: 45px;
-    transform: translate(0, -50%);
+    transform: translate(0, -50%);  /* Centering vertically, correcting for height of element */
 }
 
 nav ul {
@@ -327,7 +327,7 @@ footer nav li a {
     padding: 40px;
 }
 
-.highlight:nth-of-type(odd) {
+.highlight:nth-of-type(odd) {  /* Giving every other highlight element a dark background */
     background: #272E3D;
     border-radius: 6px;
 }
@@ -430,6 +430,10 @@ footer nav li a {
 }
 
 @media screen and (max-width: 850px) {
+
+   /* Lots of changes to the header to place it on the side of the screen, stacking li elements vertivally.  */
+   /* It also places the nav 230px off the screen to the right. When the checkbox is checked (when the label is clicked) */
+   /* The nav is moved left on to the screen 230 px to the left. This movement is animated with a transition */
     header nav {
         height: 100%;
         background: #2A3241;
