@@ -18,7 +18,6 @@ window.onload = async function() {
 // load blinking logo
 
 const blunk = document.getElementById('blunk');
-console.log(blunk);
 
 blunk.onmouseover = function() {
   this.src = 'img/GIF/logo-blink.gif';
