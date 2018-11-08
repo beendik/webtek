@@ -16,5 +16,18 @@ function scrollUntil() {
   }
 }
 
+let initializer;
+
+if (window.location.pathname.split('/').pop() === 'index.html') {
+  initializer = document.getElementById('lesMer');
+  console.log(window.location.pathname.split('/').pop());
+} else if (window.location.pathname.split('/').pop() === 'bestilling.html') {
+  initializer = document.getElementById('regnut');
+}
+
+initializer.addEventListener('click', function() {
+  setOffset(document.getElementById('intro').offsetTop, window.pageYOffset);
+  scrollUntil();
+})
 
 
