@@ -475,3 +475,68 @@ footer nav li a {
         font-size: 36px;
     }
 }
+
+/*Kontakt*/
+
+.map {
+    position: relative;
+}
+
+.map iframe {
+    width: 100%;
+    height: calc(((100vh - 90px) / 2) + 8vh);
+}
+
+.map-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.map-content h2 {
+    color: #202631;
+    font-size: 45px;
+}
+
+.contact {
+    height: calc(((100vh - 90px) / 2) - 8vh);
+    background: #202631;
+    position: relative;
+    padding: 0;
+}
+
+.contact h2 {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.boks {
+    width: 50%;
+    margin: auto;
+    padding: 90px 0 120px;
+    font-family: "Source Sans Pro", "Trebuchet MS", sans-serif;
+}
+
+.phone {
+    float: left;
+}
+
+.email {
+    float: right;
+}
+
+@media screen and (max-width: 650px) {
+    .phone, .email {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding-top: 8px;
+    }
+
+    .boks{
+        padding: 40px 0 120px 0;
+    }
+}
