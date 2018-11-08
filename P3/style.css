@@ -1,0 +1,88 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #ecf0fa;
+    color: #262626;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(-45deg, #EE7752, #152239);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    text-shadow: 0 0 5px #000;
+    color: #ecf0fa;
+}
+
+
+@keyframes Gradient {
+    0% {background-position: 0% 50%}
+    50% {background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+main {
+    max-width: 700px;
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    margin: 40px 0 0;
+    color: rgba(28,55,96,0.95);
+}
+
+p {
+    line-height: 1.6em;
+    font-size: 1.1em;
+}
+
+h2 + p {
+    margin-top: 10px;
+}
+
+header p {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 16px;
+    font-size: 1em;
+}
+
+header p:last-child {
+    border: 1px solid #ecf0fa;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px 13px;
+    display: inline-block;
+
+}
+
+ul {
+    margin-top: 0;
+}
+
+ul p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.sublist {
+    list-style-type: none;
+}
