@@ -25,5 +25,5 @@ for (let item of navItems) {
     this.src = 'img/GIF/logo-blink.gif';
   };
   blunk.onmouseleave = function() {
-    this.src = 'img/GIF/logo-blink.png';
+    this.src = 'img/logo-blink.png';
   };
