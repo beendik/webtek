@@ -565,3 +565,92 @@ p.pDark {
         text-align: center;
     }
 }
+
+
+/*  ============
+    BESTILLING
+    ============  */
+
+.introb {
+    background: rgb(64, 74, 92);
+    padding: 100px 0;
+    margin-bottom: 40px;
+}
+
+.introb h2 {
+    text-align: center;
+    font-family: "Source Serif Pro", Georgia, serif;
+    font-weight: 400;
+    max-width: 700px;
+    margin: auto;
+    text-transform: none;
+}
+
+.noarrow input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.h4 {
+    font-size: 15px;
+    margin: 25px 0 10px 0;
+    color: rgba(232, 236, 248, 0.575)
+}
+
+.best {
+    text-align: center;
+}
+
+.best h2 { /*Samme som .intro h2 i style.css*/
+
+    font-family: "Source Serif Pro", Georgia, serif;
+    font-weight: 400;
+    max-width: 700px;
+    margin: auto;
+    text-transform: none;
+}
+
+#regnut { /*Skal styles på samme måte som knappen øverst på forsiden, bare at den er oransj. Hvor har den cssen blitt av?*/
+    color: #F19861;
+    margin-top: 5em;
+}
+
+.plussminus, #dipp, #wood, #tre {
+    box-sizing: border-box;
+    background-color: #2A3241;
+    color: #E8ECF8;
+    padding: 15px;
+    border: 2px solid rgb(64, 74, 92);
+    font-size: 16px;
+    font-family: "Source Sans Pro", "Trebuchet MS", sans-serif;
+}
+
+.copyb {
+    max-width: 200px;
+    margin: auto;
+}
+
+#dipp, #wood, #tre {
+    background-color: #202631;
+}
+
+#dipp, #wood, .plussminus {
+    width: 51px;
+    text-align: center;
+
+}
+
+.pluss {
+    border-left: none;
+}
+
+.minus {
+    border-right: none;
+}
+
+#bestwrap, #tre {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
