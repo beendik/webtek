@@ -477,56 +477,46 @@ footer nav li a {
 }
 
 /*Kontakt*/
-
 .map {
     position: relative;
 }
-
 .map iframe {
     width: 100%;
     height: calc(((100vh - 90px) / 2) + 8vh);
 }
-
 .map-content {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
 .map-content h2 {
     color: #202631;
     font-size: 45px;
 }
-
 .contact {
     height: calc(((100vh - 90px) / 2) - 8vh);
     background: #202631;
     position: relative;
     padding: 0;
 }
-
 .contact h2 {
     position: relative;
     top: 50%;
     transform: translate(0, -50%);
 }
-
 .boks {
     width: 50%;
     margin: auto;
     padding: 90px 0 120px;
     font-family: "Source Sans Pro", "Trebuchet MS", sans-serif;
 }
-
 .phone {
     float: left;
 }
-
 .email {
     float: right;
 }
-
 @media screen and (max-width: 650px) {
     .phone, .email {
         display: block;
@@ -538,5 +528,40 @@ footer nav li a {
 
     .boks{
         padding: 40px 0 120px 0;
+    }
+}
+
+/*Om Oss*/
+.wrap.OmOss {
+    padding-top: 80px;
+}
+h2.h2Dark {
+    color: #202631;
+}
+p.OmOss {
+    max-width: 700px;
+    margin: auto;
+}
+p.pDark {
+    font-style: italic;
+    margin: auto;
+    max-width: 700px;
+    color: #202631;
+}
+.highlight:nth-of-type(odd) {
+    background: none;
+}
+.OmOss .col2 img{
+    width: 70%;
+}
+.highlight.OmOss {
+    padding: 20px;
+}
+.highlight:nth-of-type(odd).OmOss .copy {
+    text-align: right;
+}
+@media screen and (max-width: 650px) {
+    .highlight.OmOss .copy, .highlight:nth-of-type(odd).OmOss .copy {
+        text-align: center;
     }
 }
