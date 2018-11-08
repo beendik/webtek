@@ -679,7 +679,7 @@ label[for=dipper] span, label[for=woodpecker] span {
     margin-top: 5em;
 }
 
-.plussminus, #dipper, #woodpecker, #trestolper {
+.plussminus, #dipper-input, #woodpecker-input, #trestolper {
     box-sizing: border-box;
     background-color: #2A3241;
     color: #E8ECF8;
@@ -699,11 +699,11 @@ label[for=trestolper] span:first-child {
     margin-bottom: 16px;
 }
 
-#dipper, #woodpecker, #trestolper {
+#dipper-input, #woodpecker-input, #trestolper {
     background-color: #202631;
 }
 
-#dipper, #woodpecker, .plussminus {
+#dipper-input, #woodpecker-input, .plussminus {
     width: 51px;
     text-align: center;
 }
