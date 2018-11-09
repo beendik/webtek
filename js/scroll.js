@@ -22,7 +22,7 @@ let initializer, target;
 
 // comparing the file name of the current site to find the right trigger and target elements
 
-if (window.location.pathname.split('/').pop() === 'index.html') {
+if (window.location.pathname.split('/').pop() === 'index.html' || window.location.pathname.split('/').pop() === '') {
   initializer = document.getElementById('lesMer');
   target = document.getElementById('intro');
 
